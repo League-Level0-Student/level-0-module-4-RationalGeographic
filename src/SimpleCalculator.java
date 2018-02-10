@@ -7,28 +7,28 @@ public class SimpleCalculator {
 
 		// 1. Get 2 numbers from the user and convert them to integer.
 		String qw = JOptionPane.showInputDialog("Gimme a number bro");
-		int we = Integer.parseInt(qw);
+		int nm = Integer.parseInt(qw);
 		String rt = JOptionPane.showInputDialog("Gimme another number");
-		int ty = Integer.parseInt(rt);
+		int vb = Integer.parseInt(rt);
 		// 2. Customize pop-up to support add/subtract/multiply/divide operations.
-		int operation = JOptionPane.showOptionDialog(null, "What do you want to do with " + we + " and " + ty, "Simple Calculator", 0,
-				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "add", "subtract", "multiply", "divide", "Awesomeness" },
+		int operation = JOptionPane.showOptionDialog(null, "What do you want to do with " + nm + " and " + vb, "Simple Calculator", 0,
+				JOptionPane.INFORMATION_MESSAGE, null, new String[] { "add", "subtract", "multiply", "divide", "Anmsomeness" },
 				null);
 if(operation == 0) {
-	add(we , ty);
-	System.out.println(add(we , ty));
+	add(nm , vb);
+	System.out.println(add(nm , vb));
 }
 if(operation == 1)	{
-subtract(we, ty)	;
-System.out.println(subtract(we, ty));
+subtract(nm, vb)	;
+System.out.println(subtract(nm, vb));
 }
 if(operation == 2)	{
-multiply(we, ty)	;
-System.out.println(multiply(we, ty));
+multiply(nm, vb)	;
+System.out.println(multiply(nm, vb));
 }
 if(operation == 3)	{
-divide(we, ty)	;
-System.out.println(divide(we, ty));
+divide(nm, vb)	;
+System.out.println(divide(nm, vb));
 }
 if(operation == 4) {
 	System.out.println(beAwesome());
